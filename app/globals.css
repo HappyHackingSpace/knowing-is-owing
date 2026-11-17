@@ -91,3 +91,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* The poster is designed at 50x70cm; print it edge to edge at that size. */
+@media print {
+  @page {
+    size: 50cm 70cm;
+    margin: 0;
+  }
+}
